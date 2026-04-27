@@ -1,11 +1,11 @@
 ---
 name: zh-natural-writing
-description: Rewrite, edit, or review Chinese text so it sounds natural, direct, and native to modern Chinese contexts instead of AI-flavored, translation-like, over-polished, self-justifying, judgmental, definition-heavy, internet-jargon-heavy, mistranslated, or slogan-heavy. Use for Chinese README files, documentation, product copy, UI text, commit messages, issues, PR descriptions, slide copy, articles, prompts, social posts, and any request mentioning 去 AI 味、去除 AI 味儿、翻译腔、英文翻译腔、中文润色、自然一点、别像 AI 写的、说人话、接地气、平铺直叙、不要概念掰扯、互联网黑话, or similar wording.
+description: Rewrite, edit, or review Chinese text so it sounds natural, direct, and native to modern Chinese contexts instead of AI-flavored, translation-like, over-polished, self-justifying, judgmental, definition-heavy, internet-jargon-heavy, emoji/icon-heavy, mistranslated, or slogan-heavy. Use for Chinese README files, documentation, product copy, UI text, commit messages, issues, PR descriptions, slide copy, articles, prompts, social posts, and any request mentioning 去 AI 味、去除 AI 味儿、翻译腔、英文翻译腔、中文润色、自然一点、别像 AI 写的、说人话、接地气、平铺直叙、不要概念掰扯、互联网黑话、少用 emoji、少用图标, or similar wording.
 ---
 
 # 中文自然写作
 
-把中文内容改得自然、直接、像中文语境里的人写的。重点不是伪装成“非 AI”，而是删掉空话、套话、翻译腔、互联网黑话、概念掰扯和自证式表达。
+把中文内容改得自然、直接、像中文语境里的人写的。重点不是伪装成“非 AI”，而是删掉空话、套话、翻译腔、互联网黑话、概念掰扯、自证式表达和刻意装饰。
 
 ## 默认流程
 
@@ -13,7 +13,7 @@ description: Rewrite, edit, or review Chinese text so it sounds natural, direct,
 2. 保留原意、事实、术语和必要语气。不拔高，不乱加情绪，不把短文本扩成长说明。
 3. 先删空话，再改句子。没有事实支撑的“价值、意义、能力、洞察、赋能”优先删除。
 4. 把抽象词换成具体行为、对象或结果。换不了就删，不用另一个抽象词顶上。
-5. 改完做口吻检查：有没有翻译腔、互联网黑话、概念掰扯、自证式表达、作文式连接词。
+5. 改完做口吻检查：有没有翻译腔、互联网黑话、概念掰扯、自证式表达、作文式连接词、过量 emoji 或 icon。
 6. 输出成品。用户只要求改写时，直接给改写稿；用户要求说明时，再简短说明改了哪里。
 
 ## 改写原则
@@ -25,6 +25,7 @@ description: Rewrite, edit, or review Chinese text so it sounds natural, direct,
 - 少用自证式口吻：少写“我们不……是因为……”“我们之所以……是因为……”。这类句子像在替自己解释动机，通常改成事实或做法。
 - 少用翻译腔：在……方面具有重要意义、对于……而言、提供了一个……的能力。英文翻译腔还常见于硬搬被动语态、名词化和误译词。
 - 少用互联网黑话：赋能、抓手、闭环、链路、底座、心智、生态、沉淀、方法论、全域、私域、跃迁。
+- 少用 emoji、icon 和装饰性符号。AI 内容常用它们制造“活泼感”和“层次感”，但中文自然表达不需要靠符号撑语气。
 - 少做概念掰扯：少写“X 是 X，而不是 X”“X 不是 X，而是 X”“真正的 X 是 X”“X 的本质是 X”。这种句子容易显得在下定义、判高低。
 - 技术文档以清楚为先，不为了口语化牺牲准确性。
 - 产品文案要有判断，不堆形容词，不空喊“高效、智能、极致、领先”。
@@ -38,6 +39,7 @@ description: Rewrite, edit, or review Chinese text so it sounds natural, direct,
 3. 少做概念掰扯：不要动不动写“不是……而是……”“真正的……”“本质上……”。多数情况下直接说事实或做法。
 4. 平铺直叙：把“为了更好地满足用户在复杂场景下的多样化需求”改成“用户可以在一个地方完成 X”这类说法。
 5. 避免自证：不要解释“我们为什么这么写/这么做”。直接写结果、做法或取舍。
+6. 少用 emoji、icon 和装饰性符号：不要用 ✅、🚀、✨、👉、📌 这类符号撑结构或语气。除非原场景明确需要，否则删掉。
 
 ## 改写顺序
 

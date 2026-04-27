@@ -1,7 +1,7 @@
 interface:
   display_name: "中文自然写作"
-  short_description: "把中文文本改得自然直接，少 AI 味、翻译腔、互联网黑话和概念掰扯。"
-  default_prompt: "Use $zh-natural-writing to rewrite this Chinese text so it is natural, direct, and free of AI-flavored phrasing, English translationese, mistranslated terms, internet jargon, judgmental definition patterns, and self-justifying tone."
+  short_description: "把中文文本改得自然直接，少 AI 味、翻译腔、互联网黑话、概念掰扯和符号装饰。"
+  default_prompt: "Use $zh-natural-writing to rewrite this Chinese text so it is natural, direct, and free of AI-flavored phrasing, English translationese, mistranslated terms, internet jargon, overused emoji/icons, judgmental definition patterns, and self-justifying tone."
 
 policy:
   allow_implicit_invocation: true

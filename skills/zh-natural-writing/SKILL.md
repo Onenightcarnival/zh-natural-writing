@@ -1,32 +1,54 @@
 ---
 name: zh-natural-writing
-description: Rewrite, edit, or review Chinese text so it sounds natural, direct, and native to modern Chinese contexts instead of AI-flavored, translation-like, over-polished, or slogan-heavy. Use for Chinese README files, documentation, product copy, UI text, commit messages, issues, PR descriptions, slide copy, articles, prompts, social posts, and any request mentioning 去 AI 味、去除 AI 味儿、翻译腔、中文润色、自然一点、别像 AI 写的、说人话、接地气, or similar wording.
+description: Rewrite, edit, or review Chinese text so it sounds natural, direct, and native to modern Chinese contexts instead of AI-flavored, translation-like, over-polished, self-justifying, judgmental, definition-heavy, internet-jargon-heavy, mistranslated, or slogan-heavy. Use for Chinese README files, documentation, product copy, UI text, commit messages, issues, PR descriptions, slide copy, articles, prompts, social posts, and any request mentioning 去 AI 味、去除 AI 味儿、翻译腔、英文翻译腔、中文润色、自然一点、别像 AI 写的、说人话、接地气、平铺直叙、不要概念掰扯、互联网黑话, or similar wording.
 ---
 
 # 中文自然写作
 
-把中文内容改得自然、直接、像真人在中文语境里写的。重点不是伪装成“非 AI”，而是删掉空话、套话、翻译腔和自证式表达。
+把中文内容改得自然、直接、像中文语境里的人写的。重点不是伪装成“非 AI”，而是删掉空话、套话、翻译腔、互联网黑话、概念掰扯和自证式表达。
 
 ## 默认流程
 
 1. 先判断文本用途：技术文档、README、产品文案、UI 文案、commit / PR、PPT、公众号 / 长文、社交媒体、prompt。
-2. 保留原意和事实，不擅自拔高，不乱加情绪，不把短文本扩成大段说明。
-3. 删除没有信息量的句子，再处理语气和句式。
-4. 把抽象词换成具体说法。换不了就删，别用另一个抽象词顶上。
-5. 输出成品。用户只要求改写时，直接给改写稿；用户要求说明时，再简短说明改了哪里。
+2. 保留原意、事实、术语和必要语气。不拔高，不乱加情绪，不把短文本扩成长说明。
+3. 先删空话，再改句子。没有事实支撑的“价值、意义、能力、洞察、赋能”优先删除。
+4. 把抽象词换成具体行为、对象或结果。换不了就删，不用另一个抽象词顶上。
+5. 改完做口吻检查：有没有翻译腔、互联网黑话、概念掰扯、自证式表达、作文式连接词。
+6. 输出成品。用户只要求改写时，直接给改写稿；用户要求说明时，再简短说明改了哪里。
 
 ## 改写原则
 
-- 平铺直叙表达观点，少铺垫，少解释自己为什么这么写。
+- 平铺直叙表达观点。先说结论或动作，少铺垫，少解释自己为什么这么写。
 - 能短就短。长句优先拆开，尤其是带多个“通过 / 基于 / 从而 / 进而”的句子。
 - 少用作文式连接词：首先、其次、最后、综上所述、总而言之。
 - 少用报告腔：值得注意的是、我们可以看到、不难发现、可以说。
-- 少用自证式口吻：充分体现、深刻理解、全面赋能、持续助力、打造闭环。
-- 少用翻译腔：在……方面具有重要意义、对于……而言、提供了一个……的能力。
+- 少用自证式口吻：少写“我们不……是因为……”“我们之所以……是因为……”。这类句子像在替自己解释动机，通常改成事实或做法。
+- 少用翻译腔：在……方面具有重要意义、对于……而言、提供了一个……的能力。英文翻译腔还常见于硬搬被动语态、名词化和误译词。
+- 少用互联网黑话：赋能、抓手、闭环、链路、底座、心智、生态、沉淀、方法论、全域、私域、跃迁。
+- 少做概念掰扯：少写“X 是 X，而不是 X”“X 不是 X，而是 X”“真正的 X 是 X”“X 的本质是 X”。这种句子容易显得在下定义、判高低。
 - 技术文档以清楚为先，不为了口语化牺牲准确性。
 - 产品文案要有判断，不堆形容词，不空喊“高效、智能、极致、领先”。
 - 中文项目里可以保留必要英文术语，不要强行翻译成熟人看不懂的中文。
 - 不使用“优化如下”“润色如下”“我帮你改成”这类前置说明，除非用户明确要过程。
+
+## 硬约束
+
+1. 不要 AI 味儿、翻译腔：不要套“通过 A 实现 B”“对于 X 而言”“在 Y 方面具有重要意义”。少写“被……所……”，能写主谓宾就写主谓宾。
+2. 少用互联网黑话：不要用“赋能、闭环、链路、底座、心智、生态、方法论”撑句子。能说具体动作就说具体动作。
+3. 少做概念掰扯：不要动不动写“不是……而是……”“真正的……”“本质上……”。多数情况下直接说事实或做法。
+4. 平铺直叙：把“为了更好地满足用户在复杂场景下的多样化需求”改成“用户可以在一个地方完成 X”这类说法。
+5. 避免自证：不要解释“我们为什么这么写/这么做”。直接写结果、做法或取舍。
+
+## 改写顺序
+
+按这个顺序处理，避免越改越油：
+
+1. 删：删空泛价值判断、套话开头、重复解释。
+2. 换：把互联网黑话、误译词和抽象名词换成动作、对象和结果。
+3. 拆：把一长串因果、递进拆成两三句。
+4. 收：删掉“更好地、进一步、持续、全面、深度”等凑语气的词。
+5. 平：把“不是 A，而是 B”这类概念掰扯改成平实陈述。
+6. 查：读一遍，看是不是像中文里自然会说的话。
 
 ## 按场景处理
 
@@ -38,6 +60,7 @@ description: Rewrite, edit, or review Chinese text so it sounds natural, direct,
 - 删除营销话术。
 - 把“能力说明”改成“行为说明”。
 - 对强主张保持明确，不要磨成中性废话。
+- 少写“面向复杂业务场景”“提供完整解决方案”。直接写适用场景和不适用场景。
 
 ### 产品文案 / 官网文案
 
@@ -46,6 +69,7 @@ description: Rewrite, edit, or review Chinese text so it sounds natural, direct,
 - 标题直接说对象或主张。
 - 卖点用具体变化表达，不用“提升体验”“释放价值”撑场面。
 - 不写自夸式证明，如“体现我们对行业的深刻洞察”。
+- 少用“新一代、全场景、一站式、智能化”这类词，除非后面马上解释清楚。
 
 ### UI 文案
 
@@ -54,6 +78,7 @@ description: Rewrite, edit, or review Chinese text so it sounds natural, direct,
 - 按用户正在做的动作写。
 - 按钮用动词，状态用事实，错误提示给下一步。
 - 不在界面里解释产品理念。
+- 能写具体错误就写具体错误，不用“相关配置”“当前操作”等泛称。
 
 ### Commit / PR / Issue
 
@@ -62,6 +87,7 @@ description: Rewrite, edit, or review Chinese text so it sounds natural, direct,
 - 动词开头，讲结果。
 - 不写“本次提交主要是为了……提升代码质量”这类空话。
 - PR 描述里先写行为变化，再写验证方式。
+- 不写“优化”“完善”当主语，除非后面说明到底改了什么。
 
 ### PPT / 汇报材料
 
@@ -70,6 +96,7 @@ description: Rewrite, edit, or review Chinese text so it sounds natural, direct,
 - 标题写判断，不写栏目名。
 - 少用“背景-问题-方案-价值”的模板腔。
 - 一页只保留一个主判断，下面用要点支撑。
+- 少用大词压标题。能写“客户续费慢”就别写“客户成功体系待升级”。
 
 ### 公众号 / 长文 / 社交媒体
 
@@ -78,6 +105,7 @@ description: Rewrite, edit, or review Chinese text so it sounds natural, direct,
 - 开头直接进入问题或场景。
 - 可以保留一点个人判断，但不要表演情绪。
 - 删掉“相信大家都……”和“在当今时代……”这类空开场。
+- 不为了显得轻松而硬加口头禅。自然不是随便。
 
 ## 需要参考时
 

@@ -1,6 +1,6 @@
 ---
 name: zh-natural-writing
-description: Rewrite, edit, or review Chinese text so it sounds natural, direct, and native to modern Chinese contexts instead of AI-flavored, translation-like, over-polished, self-justifying, judgmental, definition-heavy, internet-jargon-heavy, emoji/icon-heavy, mistranslated, or slogan-heavy. Use for Chinese README files, documentation, product copy, UI text, commit messages, issues, PR descriptions, slide copy, articles, prompts, social posts, and any request mentioning 去 AI 味、去除 AI 味儿、翻译腔、英文翻译腔、中文润色、自然一点、别像 AI 写的、说人话、接地气、平铺直叙、不要概念掰扯、互联网黑话、少用 emoji、少用图标, or similar wording.
+description: Rewrite, edit, or review Chinese text so it sounds natural, direct, and native to modern Chinese contexts instead of AI-flavored, translation-like, over-polished, self-justifying, judgmental, definition-heavy, internet-jargon-heavy, emoji/icon-heavy, mistranslated, slogan-heavy, or built from English semantic calques and sentence patterns. Use for Chinese README files, documentation, product copy, UI text, commit messages, issues, PR descriptions, slide copy, articles, prompts, social posts, and requests mentioning 去 AI 味、去除 AI 味儿、翻译腔、英文翻译腔、欧化中文、英文直译、不地道用词、中文润色、自然一点、别像 AI 写的、说人话、接地气、平铺直叙、不要概念掰扯、互联网黑话、少用 emoji、少用图标, or similar wording.
 ---
 
 # 中文自然写作
@@ -10,11 +10,12 @@ description: Rewrite, edit, or review Chinese text so it sounds natural, direct,
 ## 默认流程
 
 1. 先判断文本用途：技术文档、README、产品文案、UI 文案、commit / PR、PPT、公众号 / 长文、社交媒体、prompt。
-2. 保留原意、事实、术语和必要语气。不拔高，不乱加情绪，不把短文本扩成长说明。
+2. 保留原意、事实、术语和必要语气。不拔高，不乱加情绪，不把短文本扩成长说明，不补写原文没有的事实和因果。
 3. 先删空话，再改句子。没有事实支撑的“价值、意义、能力、洞察、赋能”优先删除。
-4. 把抽象词换成具体行为、对象或结果。换不了就删，不用另一个抽象词顶上。
-5. 改完做口吻检查：有没有翻译腔、互联网黑话、概念掰扯、自证式表达、作文式连接词、过量 emoji 或 icon。
-6. 输出成品。用户只要求改写时，直接给改写稿；用户要求说明时，再简短说明改了哪里。
+4. 检查英文直译留下的词义和搭配。重点看“光谱、谱系、张力、透镜、锚点、容器、空间、轨迹”等抽象名词，以及“接住观点、击穿论证、打开可能性、承载复杂性”等物理动作隐喻。
+5. 把空泛抽象词换成具体行为、对象或结果。原词在专业语境中准确，就保留；换不了也不能凭空补细节。
+6. 改完做口吻检查：有没有翻译腔、英译式搭配、互联网黑话、概念掰扯、自证式表达、作文式连接词、过量 emoji 或 icon。
+7. 输出成品。用户只要求改写时，直接给改写稿；用户要求说明时，再简短说明改了哪里。
 
 ## 改写原则
 
@@ -23,30 +24,34 @@ description: Rewrite, edit, or review Chinese text so it sounds natural, direct,
 - 少用作文式连接词：首先、其次、最后、综上所述、总而言之。
 - 少用报告腔：值得注意的是、我们可以看到、不难发现、可以说。
 - 少用自证式口吻：少写“我们不……是因为……”“我们之所以……是因为……”。这类句子像在替自己解释动机，通常改成事实或做法。
-- 少用翻译腔：在……方面具有重要意义、对于……而言、提供了一个……的能力。英文翻译腔还常见于硬搬被动语态、名词化和误译词。
+- 少用翻译腔：在……方面具有重要意义、对于……而言、提供了一个……的能力。英文翻译腔还常见于硬搬被动语态、名词化、英文句子骨架和不合语境的直译词。
+- 检查“每个字都是中文，搭配却像英文”的表达。例如“复杂的情感光谱”“个体与时代的张力”“提供新的透镜”“打开讨论空间”“在不确定性中寻找锚点”。先问它具体指什么，再改成中文里常用的说法。
+- 检查悬空的物理动作。少用“接住观点、击穿论证、收紧判断、承载复杂性、穿越不确定性、解锁可能性”制造力量感，直接写理解了什么、哪里不成立、如何取舍、具体能做什么。
 - 少用互联网黑话：赋能、抓手、闭环、链路、底座、心智、生态、沉淀、方法论、全域、私域、跃迁。
 - 少用 emoji、icon 和装饰性符号。AI 内容常用它们制造“活泼感”和“层次感”，但中文自然表达不需要靠符号撑语气。
 - 少做概念掰扯：少写“X 是 X，而不是 X”“X 不是 X，而是 X”“真正的 X 是 X”“X 的本质是 X”。这种句子容易显得在下定义、判高低。
 - 技术文档以清楚为先，不为了口语化牺牲准确性。
 - 产品文案要有判断，不堆形容词，不空喊“高效、智能、极致、领先”。
 - 中文项目里可以保留必要英文术语，不要强行翻译成熟人看不懂的中文。
+- 不把词表当禁词表。“张力”可以用于文学和物理，“光谱”可以用于光学，“谱系”可以用于历史和哲学。只处理不合语境、没有明确所指或可以直接换成普通中文的用法。
 - 不使用“优化如下”“润色如下”“我帮你改成”这类前置说明，除非用户明确要过程。
 
 ## 硬约束
 
-1. 不要 AI 味儿、翻译腔：不要套“通过 A 实现 B”“对于 X 而言”“在 Y 方面具有重要意义”。少写“被……所……”，能写主谓宾就写主谓宾。
+1. 不要 AI 味儿、翻译腔：少套“通过 A 实现 B”“对于 X 而言”“在 Y 方面具有重要意义”。少写“被……所……”，能写主谓宾就写主谓宾。
 2. 少用互联网黑话：不要用“赋能、闭环、链路、底座、心智、生态、方法论”撑句子。能说具体动作就说具体动作。
 3. 少做概念掰扯：不要动不动写“不是……而是……”“真正的……”“本质上……”。多数情况下直接说事实或做法。
 4. 平铺直叙：把“为了更好地满足用户在复杂场景下的多样化需求”改成“用户可以在一个地方完成 X”这类说法。
-5. 避免自证：不要解释“我们为什么这么写/这么做”。直接写结果、做法或取舍。
+5. 避免无事实的自证：不要用动机解释替代事实。设计依据和必要取舍可以保留，但要说清具体原因。
 6. 少用 emoji、icon 和装饰性符号：不要用 ✅、🚀、✨、👉、📌 这类符号撑结构或语气。除非原场景明确需要，否则删掉。
+7. 不编事实：原文没说具体功能、数据、步骤或因果时，不要为了“写具体”自行补全。可以删掉空话、保留克制表达，或标出需要作者补充的信息。
 
 ## 改写顺序
 
 按这个顺序处理，避免越改越油：
 
 1. 删：删空泛价值判断、套话开头、重复解释。
-2. 换：把互联网黑话、误译词和抽象名词换成动作、对象和结果。
+2. 换：把互联网黑话、英译式词语、悬空物理隐喻和抽象名词换成动作、对象和结果。
 3. 拆：把一长串因果、递进拆成两三句。
 4. 收：删掉“更好地、进一步、持续、全面、深度”等凑语气的词。
 5. 平：把“不是 A，而是 B”这类概念掰扯改成平实陈述。
@@ -111,4 +116,4 @@ description: Rewrite, edit, or review Chinese text so it sounds natural, direct,
 
 ## 需要参考时
 
-常见 AI 味句式、替代表达和场景样例见 `references/patterns.md`。当任务是大段改写、风格审校、制定写作规范，或用户要求“举例说明哪里 AI 味”时，读取这个文件。
+常见 AI 味句式、英译式词语与搭配、替代表达和场景样例见 `references/patterns.md`。当任务是大段改写、风格审校、翻译稿改写、制定写作规范，或用户要求“举例说明哪里 AI 味”时，读取这个文件。
